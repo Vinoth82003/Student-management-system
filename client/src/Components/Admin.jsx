@@ -1,9 +1,12 @@
 import React, { useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faAngleDoubleLeft,
+  faAngleDoubleRight,
   faAngleRight,
   faChalkboardTeacher,
   faDashboard,
+  faEye,
   faGraduationCap,
   faList,
   faUserPlus,
@@ -156,63 +159,132 @@ const Admin = () => {
           <div className="table-container">
             <div className="table">
               <h5>Top Students List</h5>
+              <div className="table-header">
+                <div className="table-count">
+                  <button type="button" className="prev">
+                    <FontAwesomeIcon icon={faAngleDoubleLeft} />
+                  </button>
+                  <div className="input-result">
+                    <h5>06</h5>of <p><strong>36</strong></p>
+                  </div>
+                  <button type="button" className="prev">
+                    <FontAwesomeIcon icon={faAngleDoubleRight} />
+                  </button>
+                </div>
+              </div>
               <table>
                 <tr>
-                  <th>s</th>
-                  <th>s</th>
-                  <th>s</th>
-                  <th>s</th>
-                  <th>s</th>
-                  <th>s</th>
+                  <th>sno</th>
+                  <th>photo</th>
+                  <th>name</th>
+                  <th>rollno</th>
+                  <th>std</th>
+                  <th>sec</th>
+                  <th>rank</th>
+                  <th>action</th>
                 </tr>
                 <tbody>
                   <tr>
-                    <td>adasd</td>
-                    <td>adasd</td>
-                    <td>adasd</td>
-                    <td>adasd</td>
-                    <td>adasd</td>
-                    <td>adasd</td>
+                    <td>1</td>
+                    <td className="table-photo">
+                      <img src="/user-images/male-1.jpg" alt="student" />
+                    </td>
+                    <td>student-1</td>
+                    <td>#12001</td>
+                    <td>12</td>
+                    <td>A</td>
+                    <td>1</td>
+                    <td>
+                      <button className="view-btn">
+                        <FontAwesomeIcon icon={faEye} />
+                        view
+                      </button>
+                    </td>
                   </tr>
                   <tr>
-                    <td>adasd</td>
-                    <td>adasd</td>
-                    <td>adasd</td>
-                    <td>adasd</td>
-                    <td>adasd</td>
-                    <td>adasd</td>
+                    <td>2</td>
+                    <td className="table-photo">
+                      <img src="/user-images/male-2.jpg" alt="student" />
+                    </td>
+                    <td>student-2</td>
+                    <td>#12001</td>
+                    <td>10</td>
+                    <td>B</td>
+                    <td>3</td>
+                    <td>
+                      <button className="view-btn">
+                        <FontAwesomeIcon icon={faEye} />
+                        view
+                      </button>
+                    </td>
                   </tr>
                   <tr>
-                    <td>adasd</td>
-                    <td>adasd</td>
-                    <td>adasd</td>
-                    <td>adasd</td>
-                    <td>adasd</td>
-                    <td>adasd</td>
+                    <td>3</td>
+                    <td className="table-photo">
+                      <img src="/user-images/male-3.png" alt="student" />
+                    </td>
+                    <td>student-3</td>
+                    <td>#12001</td>
+                    <td>12</td>
+                    <td>A</td>
+                    <td>1</td>
+                    <td>
+                      <button className="view-btn">
+                        <FontAwesomeIcon icon={faEye} />
+                        view
+                      </button>
+                    </td>
                   </tr>
                   <tr>
-                    <td>adasd</td>
-                    <td>adasd</td>
-                    <td>adasd</td>
-                    <td>adasd</td>
-                    <td>adasd</td>
-                    <td>adasd</td>
+                    <td>4</td>
+                    <td className="table-photo">
+                      <img src="/user-images/female-1.jpg" alt="student" />
+                    </td>
+                    <td>student-4</td>
+                    <td>#12001</td>
+                    <td>10</td>
+                    <td>B</td>
+                    <td>3</td>
+                    <td>
+                      <button className="view-btn">
+                        <FontAwesomeIcon icon={faEye} />
+                        view
+                      </button>
+                    </td>
                   </tr>
                   <tr>
-                    <td>adasd</td>
-                    <td>adasd</td>
-                    <td>adasd</td>
-                    <td>adasd</td>
-                    <td>adasd</td>
-                    <td>adasd</td>
+                    <td>5</td>
+                    <td className="table-photo">
+                      <img src="/user-images/female-2.jpg" alt="student" />
+                    </td>
+                    <td>student-5</td>
+                    <td>#12001</td>
+                    <td>12</td>
+                    <td>A</td>
+                    <td>1</td>
+                    <td>
+                      <button className="view-btn">
+                        <FontAwesomeIcon icon={faEye} />
+                        view
+                      </button>
+                    </td>
                   </tr>
                   <tr>
-                    <td>adasd</td>
-                    <td>adasd</td>
-                    <td>adasd</td>
-                    <td>adasd</td>
-                    <td>adasd</td>
-                    <td>adasd</td>
+                    <td>6</td>
+                    <td className="table-photo">
+                      <img src="/user-images/female-3.jpg" alt="student" />
+                    </td>
+                    <td>student-6</td>
+                    <td>#12001</td>
+                    <td>10</td>
+                    <td>B</td>
+                    <td>3</td>
+                    <td>
+                      <button className="view-btn">
+                        <FontAwesomeIcon icon={faEye} />
+                        view
+                      </button>
+                    </td>
                   </tr>
                 </tbody>
               </table>

@@ -5,6 +5,7 @@ const cors = require("cors"); // Import the cors package
 const session = require("express-session");
 const userRoutes = require("./routes/userRoutes");
 const app = express();
+// creating app using Express()
 
 // Middleware
 app.use(express.json());

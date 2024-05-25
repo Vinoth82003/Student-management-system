@@ -72,17 +72,104 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 th {
   padding: 10px;
   background: #000;
   color: #fff;
+  text-transform: capitalize;
 }
+
+tr:nth-child(even) {
+  background: #ffe1d7;
+}
+
+tr:nth-child(odd) {
+  background: #dedeff;
+}
+
 td {
   padding: 10px;
-  background: #e3e3e3;
   color: #0c0c0c;
+}
+
+.table-photo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 5px #717171;
+}
+
+.view-btn {
+  display: flex;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: rgb(185, 185, 254);
+  color: #000;
+  cursor: pointer;
+}
+
+.table-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.table-count {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-result {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.input-result h5,
+.input-result p {
+  font-size: 16px;
+}
+.input-result h5 {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #000;
+}
+
+.table-count button {
+  padding: 7px 10px;
+  background: rgb(88, 88, 255);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.table-count button:hover {
+  background: rgb(50, 50, 255);
+  transition: all 0.3s;
+}
+
+@media screen and (max-width: 720px) {
+  .table-container {
+    flex-direction: column;
+  }
+
+  .table {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 520px) {
