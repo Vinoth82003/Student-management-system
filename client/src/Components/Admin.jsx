@@ -3,8 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleRight,
   faChalkboardTeacher,
+  faDashboard,
   faGraduationCap,
   faList,
+  faUserPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   Chart as ChartJS,
@@ -86,37 +88,56 @@ const Admin = () => {
       <section className="admin-page">
         <div className="side-menu">
           <ul className="top-options">
-            <li className="top-list">
-              <div className="inner-list">
-                <div className="top-icon">
-                  <FontAwesomeIcon icon={faGraduationCap} />
+            <li className="top-list active">
+              <div className="inner-li">
+                <div className="inner-list">
+                  <div className="top-icon">
+                    <FontAwesomeIcon icon={faDashboard} />
+                  </div>
+                  <p className="text">Dashboard</p>
                 </div>
-                <p className="text">students</p>
+                <div>
+                  <FontAwesomeIcon icon={faAngleRight} />
+                </div>
               </div>
-              <div>
-                <FontAwesomeIcon icon={faAngleRight} />
+            </li>
+            <li className="top-list group-list">
+              <div className="inner-li">
+                <div className="inner-list">
+                  <div className="top-icon">
+                    <FontAwesomeIcon icon={faGraduationCap} />
+                  </div>
+                  <p className="text">students</p>
+                </div>
+                <div>
+                  <FontAwesomeIcon icon={faAngleRight} />
+                </div>
               </div>
             </li>
             <li className="top-list">
-              <div className="inner-list">
-                <div className="top-icon">
-                  <FontAwesomeIcon icon={faChalkboardTeacher} />
+              <div className="inner-li">
+                <div className="inner-list">
+                  <div className="top-icon">
+                    <FontAwesomeIcon icon={faChalkboardTeacher} />
+                  </div>
+                  <p className="text">teachers</p>
                 </div>
-                <p className="text">teachers</p>
-              </div>
-              <div>
-                <FontAwesomeIcon icon={faAngleRight} />
+                <div>
+                  <FontAwesomeIcon icon={faAngleRight} />
+                </div>
               </div>
             </li>
             <li className="top-list">
-              <div className="inner-list">
-                <div className="top-icon">
-                  <FontAwesomeIcon icon={faList} />
+              <div className="inner-li">
+                <div className="inner-list">
+                  <div className="top-icon">
+                    <FontAwesomeIcon icon={faList} />
+                  </div>
+                  <p className="text">task</p>
                 </div>
-                <p className="text">task</p>
-              </div>
-              <div>
-                <FontAwesomeIcon icon={faAngleRight} />
+                <div>
+                  <FontAwesomeIcon icon={faAngleRight} />
+                </div>
               </div>
             </li>
           </ul>
@@ -130,6 +151,74 @@ const Admin = () => {
             <div className="chart">
               <h5>Chart for teachers and student count</h5>
               <Pie ref={roleChartRef} data={roleData} />
+            </div>
+          </div>
+          <div className="table-container">
+            <div className="table">
+              <h5>Top Students List</h5>
+              <table>
+                <tr>
+                  <th>s</th>
+                  <th>s</th>
+                  <th>s</th>
+                  <th>s</th>
+                  <th>s</th>
+                  <th>s</th>
+                </tr>
+                <tbody>
+                  <tr>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                  </tr>
+                  <tr>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                  </tr>
+                  <tr>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                  </tr>
+                  <tr>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                  </tr>
+                  <tr>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                  </tr>
+                  <tr>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                    <td>adasd</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="table">
+              <h5>Top Teachers List</h5>
             </div>
           </div>
         </div>

@@ -471,6 +471,13 @@ input[type="radio"]:checked {
   color: blue;
 }
 
+.top-list.active {
+  transition: all 0.3s;
+  background: #fff;
+  width: 100%;
+  color: blue;
+}
+
 .display-box {
   width: 100%;
   padding: 10px;

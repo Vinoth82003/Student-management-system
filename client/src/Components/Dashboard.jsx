@@ -9,6 +9,7 @@ import Profile from "./Profile";
 
 const Dashboard = ({ userId }) => {
   const context = useContext(AppContext);
+  console.log(context);
   const [isProfile, setProfile] = useState(false); // Change to false initially
   const [User, setUser] = useState(null);
 

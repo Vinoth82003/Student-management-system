@@ -135,3 +135,7 @@
 .page-route p:first-child {
   font-weight: 600;
 }
+
+.header {
+  text-transform: capitalize;
+}
